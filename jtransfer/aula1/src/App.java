@@ -1,6 +1,5 @@
 import java.io.FileWriter; // classe para escrever no arquivo
 import java.io.IOException; // classe para tratar excessoes do arquivo
-import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class App {
@@ -33,6 +32,7 @@ public class App {
         // leia a opcaoTransporte e mostre a opcao lida
         // casting (conversao) - texto/numero
         opcaoTransporte = scanner.nextInt();
+        scanner.close();
 
         switch (opcaoTransporte) {
             case 1:
